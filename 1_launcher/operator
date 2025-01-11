@@ -6,6 +6,7 @@
 
 if [ ${HOSTNAME:0:1} == "D" ]; then
   cd /root/ros2_ws/
+  source /opt/ros/${ROS_DISTRO}/setup.bash
   source install/setup.bash
   ros2 run teleop_twist_keyboard teleop_twist_keyboard
 else
